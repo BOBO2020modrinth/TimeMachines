@@ -1,5 +1,8 @@
 package net.boborice.time_machine;
 
+import net.boborice.time_machine.block.ModBlocks;
+import net.boborice.time_machine.item.ModCreativeModTabs;
+import net.boborice.time_machine.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -29,6 +32,13 @@ public class TimeMachine {
 
     public TimeMachine(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
+
+        // Adding Objects Here
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        // Adding Features Here
+        ModCreativeModTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

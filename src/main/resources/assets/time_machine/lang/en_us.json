@@ -1,0 +1,9 @@
+{
+  "item.time_machine.ancienite_shard": "Stone Shard",
+
+  "block.time_machine.ancienite": "Ancienite",
+  "block.time_machine.ancienite_tile": "Ancienite Tile",
+
+  "itemGroup.time_machine.ancient_blocks": "Ancient Blocks",
+  "itemGroup.time_machine.ancient_items": "Ancient Items"
+}
